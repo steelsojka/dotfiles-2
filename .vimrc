@@ -4,15 +4,15 @@ filetype off
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
-" Bundle 'gmarik/vundle'
-" Bundle 'scrooloose/nerdtree'
-" Bundle 'terryma/vim-multiple-cursors'
-" Bundle 'Lokaltog/vim-easymotion'
-" Bundle 'tpope/vim-surround'
-" Bundle 'rstacruz/sparkup'
-" Bundle 'tpope/vim-fugitive'
-" Bundle 'corntrace/bufexplorer'
-" Bundle 'Raimondi/delimitMate'
+Bundle 'gmarik/vundle'
+Bundle 'scrooloose/nerdtree'
+Bundle 'terryma/vim-multiple-cursors'
+Bundle 'Lokaltog/vim-easymotion'
+Bundle 'tpope/vim-surround'
+Bundle 'rstacruz/sparkup'
+Bundle 'tpope/vim-fugitive'
+Bundle 'corntrace/bufexplorer'
+Bundle 'Raimondi/delimitMate'
 
 syntax on
 let mapleader = ","

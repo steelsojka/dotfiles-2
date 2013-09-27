@@ -1,27 +1,27 @@
 [submodule "bundle/fugitive"]
 	path = bundle/fugitive
-	url = http://github.com/tpope/vim-fugitive.git
+	url = https://github.com/tpope/vim-fugitive.git
 [submodule "bundle/vundle"]
 	path = bundle/vundle
-	url = http://github.com/gmarik/vundle.git
+	url = https://github.com/gmarik/vundle.git
 [submodule "bundle/nerdtree"]
 	path = bundle/nerdtree
-	url = http://github.com/scrooloose/nerdtree.git
+	url = https://github.com/scrooloose/nerdtree.git
 [submodule "bundle/vim-easymotion"]
 	path = bundle/vim-easymotion
-	url = http://github.com/Lokaltog/vim-easymotion.git
+	url = https://github.com/Lokaltog/vim-easymotion.git
 [submodule "bundle/vim-surround"]
 	path = bundle/vim-surround
-	url = http://github.com/tpope/vim-surround.git
+	url = https://github.com/tpope/vim-surround.git
 [submodule "bundle/sparkup"]
 	path = bundle/sparkup
-	url = http://github.com/rstacruz/sparkup.git
+	url = https://github.com/rstacruz/sparkup.git
 [submodule "bundle/bufexplorer"]
 	path = bundle/bufexplorer
-	url = http://github.com/corntrace/bufexplorer.git
+	url = https://github.com/corntrace/bufexplorer.git
 [submodule "bundle/delimitMate"]
 	path = bundle/delimitMate
-	url = http://github.com/Raimondi/delimitMate.git
+	url = https://github.com/Raimondi/delimitMate.git
 [submodule "bundle/vim-multiple-cursors"]
 	path = bundle/vim-multiple-cursors
-	url = http://github.com/terryma/vim-multiple-cursors.git
+	url = https://github.com/terryma/vim-multiple-cursors.git
