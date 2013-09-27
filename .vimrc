@@ -28,6 +28,7 @@ set autoread
 
 " Fast saving
 nmap <Leader>w :w<cr> 
+nmap <Leader>q :q<cr>
 
 filetype plugin indent on
 
@@ -107,6 +108,8 @@ set wildignore+=*.png,*.jpg,*.gif
 set scrolloff=8         "Start scrolling when we're 8 lines away from
 set sidescrolloff=15
 set sidescroll=1"
+
+map <Leader>n :NERDTreeToggle<CR>
 
 " Returns true if paste mode is enabled
 function! HasPaste()
