@@ -1,21 +1,9 @@
 set nocompatible
-filetype off
 
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
-
-Bundle 'gmarik/vundle'
-Bundle 'scrooloose/nerdtree'
-Bundle 'terryma/vim-multiple-cursors'
-Bundle 'Lokaltog/vim-easymotion'
-Bundle 'tpope/vim-surround'
-Bundle 'rstacruz/sparkup'
-Bundle 'tpope/vim-fugitive'
-Bundle 'corntrace/bufexplorer'
-Bundle 'Raimondi/delimitMate'
-Bundle 'bling/vim-airline'
-
+execute pathogen#infect()
+filetype plugin indent on
 syntax on
+
 let mapleader = ","
 let g:mapleader = ","
 set number
@@ -31,7 +19,6 @@ set autoread
 nmap <Leader>w :w<cr> 
 nmap <Leader>q :q<cr>
 
-filetype plugin indent on
 
 set tabstop=2
 set smarttab
@@ -50,7 +37,6 @@ map <leader>tm :tabmove"
 
 " Switch CWD to the directory of the open buffer
 map <leader>cd :cd %:p:h<cr>:pwd<cr>"
-let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#hunks#enabled = 1
 
 " Format the status line
@@ -67,8 +53,6 @@ set ruler
 
 set grepprg=ack
 set grepformat=%f:$l:$m
-
-let g:molokai_original=1
 
 set backup
 set backupdir=~/.vim/backups
@@ -98,18 +82,20 @@ set wildignore+=log/**
 set wildignore+=tmp/**
 set wildignore+=*.png,*.jpg,*.gif
 
-"
+
 let g:airline_left_sep = '▶'
 let g:airline_right_sep = '◀'
 let g:airline#extensions#branch#enabled = 1
 let g:airline_detect_modified=1
 let g:airline_detect_paste=1
 
+autocmd FileType html,htmldjango,jinjahtml,eruby,mako let b:closetag_html_style=1
+autocmd FileType html,xhtml,xml,htmldjango,jinjahtml,eruby,mako source ~/.vim/bundle/closetag/plugin/closetag.vim
 " ================ Scrolling ========================
 
 set scrolloff=8         "Start scrolling when we're 8 lines away from
 set sidescrolloff=15
-set sidescroll=1"
+set sidescroll=1
 
 map <Leader>n :NERDTreeToggle<CR>
 
