@@ -25,8 +25,6 @@ set smarttab
 set shiftwidth=2
 set autoindent
 set backspace=eol,start,indent
-set cursorline
-set lazyredraw
 set showmatch
 
 " Useful mappings for managing tabs
@@ -67,7 +65,9 @@ imap <down> <nop>
 imap <left> <nop>
 imap <right> <nop>
 
-" ================ Completion =======================
+nnoremap <leader>t :NERDTree<CR>
+nnoremap <leader>f :NERDTreeFind<CR>
+"================ Completion =======================
 
 set wildmode=list:longest
 set wildmenu                "enable ctrl-n and ctrl-p to scroll thru matches
@@ -96,8 +96,6 @@ autocmd FileType html,xhtml,xml,htmldjango,jinjahtml,eruby,mako source ~/.vim/bu
 set scrolloff=8         "Start scrolling when we're 8 lines away from
 set sidescrolloff=15
 set sidescroll=1
-
-map <Leader>n :NERDTreeToggle<CR>
 
 " Returns true if paste mode is enabled
 function! HasPaste()
