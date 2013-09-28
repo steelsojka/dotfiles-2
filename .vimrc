@@ -13,6 +13,7 @@ Bundle 'rstacruz/sparkup'
 Bundle 'tpope/vim-fugitive'
 Bundle 'corntrace/bufexplorer'
 Bundle 'Raimondi/delimitMate'
+Bundle 'bling/vim-airline'
 
 syntax on
 let mapleader = ","
@@ -23,7 +24,7 @@ set hlsearch
 set incsearch
 set smartcase
 colorscheme jellybeans
-
+set laststatus=2
 set autoread
 
 " Fast saving
@@ -49,15 +50,11 @@ map <leader>tm :tabmove"
 
 " Switch CWD to the directory of the open buffer
 map <leader>cd :cd %:p:h<cr>:pwd<cr>"
-
-"""""""""""""""""""""
-" => Status line
-" """""""""""""""""""""
-" " Always show the status line
-set laststatus=2
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#hunks#enabled = 1
 
 " Format the status line
-set statusline=\ %{HasPaste()}%F%m%r%h\ %w\ \ CWD:\ %r%{getcwd()}%h\ \ \ Line:\ %l
+" set statusline=\ %{HasPaste()}%F%m%r%h\ %w\ \ CWD:\ %r%{getcwd()}%h\ \ \ Line:\ %l
 
 " Move around splits with <c-hjkl>
 nnoremap <c-j> <c-w>j
@@ -102,6 +99,11 @@ set wildignore+=tmp/**
 set wildignore+=*.png,*.jpg,*.gif
 
 "
+let g:airline_left_sep = '▶'
+let g:airline_right_sep = '◀'
+let g:airline#extensions#branch#enabled = 1
+let g:airline_detect_modified=1
+let g:airline_detect_paste=1
 
 " ================ Scrolling ========================
 
